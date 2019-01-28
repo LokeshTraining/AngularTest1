@@ -1,0 +1,16 @@
+<!-- <p class="db-title">
+    {{ dashboardName }}
+</p>
+<button (click)="changeTitle()">Change title</button>
+<br>
+
+<input placeholder="User Name gfgfgfggf" [value]="userName" type="text" />
+<br>
+<input placeholder="User Name fdfdfdfdfdfdf" [(ngModel)]="userName" type="text" />
+<br> {{userName}} -->
+Parent <br> {{today | date :'fullDate' | lowercase | uppercase}}
+<br> count from child - {{countFromChild}}
+<div style="border: 1px solid black;">
+    Child
+    <app-test-child1 [uName]='userName' (sayName)="onSayNameFromChild($event)"></app-test-child1>
+</div>

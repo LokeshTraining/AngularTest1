@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TestDDirective } from './test-d.directive';
+import { TestModuleModule } from './test-m/test-m.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestDDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TestModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
